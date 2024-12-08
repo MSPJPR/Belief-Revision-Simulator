@@ -1,0 +1,181 @@
+/* General Reset */
+body, h1, h2, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Light Theme */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container Styles */
+#belief-container, #input-container, #log-container, #visualization-container {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+body.dark-mode #belief-container,
+body.dark-mode #input-container,
+body.dark-mode #log-container,
+body.dark-mode #visualization-container {
+    background: #2e2e2e;
+    border-color: #555;
+}
+
+/* Belief List */
+#belief-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#belief-list li {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+body.dark-mode #belief-list li {
+    background: #444;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode button {
+    background-color: #1a73e8;
+}
+
+body.dark-mode button:hover {
+    background-color: #0d47a1;
+}
+
+/* Input Fields */
+input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+body.dark-mode input[type="text"], body.dark-mode select {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+/* Revision Log */
+#log {
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fafafa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+body.dark-mode #log {
+    background: #2b2b2b;
+    border-color: #444;
+}
+
+/* Visualization Container */
+#visualization-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+svg {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    transition: background 0.3s;
+}
+
+body.dark-mode svg {
+    background: #444;
+    border-color: #555;
+}
+
+/* Dark Mode Toggle Button */
+#toggle-theme-btn {
+    display: block;
+    margin: 10px auto;
+    background-color: #555;
+    color: #fff;
+}
+
+body.dark-mode #toggle-theme-btn {
+    background-color: #aaa;
+    color: #000;
+}
+
+/* Scrollbar Styling */
+#log::-webkit-scrollbar, #belief-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#log::-webkit-scrollbar-track, #belief-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body.dark-mode #log::-webkit-scrollbar-track, body.dark-mode #belief-list::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+
+#log::-webkit-scrollbar-thumb, #belief-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+body.dark-mode #log::-webkit-scrollbar-thumb, body.dark-mode #belief-list::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+#log::-webkit-scrollbar-thumb:hover, #belief-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
