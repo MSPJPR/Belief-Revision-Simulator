@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belief Revision Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <h1>Belief Revision Simulator</h1>
+
+    <button id="toggle-theme-btn">Toggle Dark Mode</button>
+
+    <div id="belief-container">
+        <h2>Current Belief State</h2>
+        <ul id="belief-list"></ul>
+    </div>
+
+    <div id="input-container">
+        <input type="text" id="new-belief" placeholder="Enter a new belief">
+        <select id="entrenchment-level">
+            <option value="1">Low Priority</option>
+            <option value="2">Medium Priority</option>
+            <option value="3">High Priority</option>
+        </select>
+        <button id="add-belief-btn">Add Belief</button>
+        <button id="revise-belief-btn">Revise Belief</button>
+    </div>
+
+    <div id="log-container">
+        <h2>Revision Log</h2>
+        <div id="log"></div>
+    </div>
+
+    <div id="visualization-container">
+        <h2>Belief Hierarchy Visualization</h2>
+        <svg width="500" height="300" id="hierarchy-visual"></svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
